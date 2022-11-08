@@ -29,3 +29,15 @@ if x < 8:
         print("x is less than 8 and y greater or equal to 5")
 else:
     print("x is greater or equal to 8")
+
+list = ['name', 'last_name', 'age']
+
+if 'name' in list:
+    print('name is in list')
+else:
+    print('name is not in list')
+
+if 'name' not in list:
+    print('name is not in list')
+else:
+    print('name may be in list')
