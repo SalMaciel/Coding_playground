@@ -1,31 +1,37 @@
 # Import random library
 import random
 
-# Title
-print("'Let's play rock paper scissors!")
+def game ():
+    # Title
+    print("'Let's play rock paper scissors!")
 
-# Options
-options = ["r", "p", "s"]
+    # Options
+    options = ["r", "p", "s"]
 
-# Computer selection
-comp_choice = random.choice(options)
+    # Computer selection
+    comp_choice = random.choice(options)
 
-# User selection
-user_choice = input("Make your choice: (r)ock, (p)aper, (s)cissors!: ")
+    # User selection
+    user_choice = input("Make your choice: (r)ock, (p)aper, (s)cissors!: ")
 
-# Game logic
+    # Game logic
+    if comp_choice == user_choice:
+        print("It's a tie!")
 
-if comp_choice == user_choice:
-    print("It's a tie!")
+    elif comp_choice == "r" and user_choice == "p":
+        print("You win!")
 
-elif comp_choice == "r" and user_choice == "p":
-    print("You win!")
+    elif comp_choice == "p" and user_choice == "s":
+        print("You win!")
 
-elif comp_choice == "p" and user_choice == "s":
-    print("You win!")
+    elif comp_choice == "s" and user_choice == "r":
+        print("You win!")
 
-elif comp_choice == "s" and user_choice == "r":
-    print("You win!")
+    else:
+        print("You Lose!")
 
-else:
-    print("You Lose!")
+again = "y"
+
+while again == "y":
+    game()
+    again = input("Do you want to play again? (y)es, (n)o ")
