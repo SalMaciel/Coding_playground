@@ -18,15 +18,11 @@ def game ():
     if comp_choice == user_choice:
         print("It's a tie!")
 
-    elif comp_choice == "r" and user_choice == "p":
+    elif (comp_choice == "r" and user_choice == "p") \
+        or (comp_choice == "p" and user_choice == "s") \
+        or (comp_choice == "s" and user_choice == "r"):
         print("You win!")
-
-    elif comp_choice == "p" and user_choice == "s":
-        print("You win!")
-
-    elif comp_choice == "s" and user_choice == "r":
-        print("You win!")
-
+    
     else:
         print("You Lose!")
 
@@ -35,3 +31,5 @@ again = "y"
 while again == "y":
     game()
     again = input("Do you want to play again? (y)es, (n)o ")
+
+exit()
