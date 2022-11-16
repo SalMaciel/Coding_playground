@@ -7,7 +7,7 @@ def main():
     # Initialize the pygame
     pygame.init()
     # Load and set the logo
-    logo = pygame.image.load("C:/Users/Salvador/anaconda3/pkgs/ipykernel-6.9.1-py37haa95532_0/Lib/site-packages/ipykernel/resources/logo-32x32.png")
+    logo = pygame.image.load("images/logo-32x32.png")
     pygame.display.set_icon(logo)
     pygame.display.set_caption("minimal program")
 
