@@ -13,6 +13,14 @@ def main():
 
     # Create a surface on screen 240 x 180
     screen = pygame.display.set_mode((240,180))
+    
+    # First blit, load image
+    image = pygame.image.load("images/01_image.png")
+    
+    # blit image to screen
+    screen.blit(image, (50,50))
+    # update the screen to make the changes visible (fullscreen update)
+    pygame.display.flip()
 
     # Define a variable to control the main loop
     running = True
